@@ -24,20 +24,20 @@ const CountryCard = ({
       as={`/country/${name}`}
     >
       <div
-        className={styles.countryCard}
+        className={styles.CountryCard}
         onClick={() => {
           setShowInfo(!showInfo);
         }}
       >
         {/* <Link className="lol-link" to={{ pathname: `/${name}`  }}/> */}
         <img
-          className={styles.countryCardFlag}
+          className={styles.CountryCardFlag}
           src={flag}
           alt={name}
           width="25%"
           height="100%"
         />
-        <div className={styles.countyCardInfo}>
+        <div className={styles.CountyCardInfo}>
           <span className="country-card__name">
             <b>Name:</b>
             {name}

@@ -7,7 +7,7 @@
   width: 100%;
 } */
 
-.countriesBoard {
+.CountriesBoard {
   display: flex;
   flex-wrap: wrap;
   padding: 0 50px;
@@ -20,7 +20,7 @@
   width: 100%;
 }
 
-.countryCard {
+.CountryCard {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -34,23 +34,23 @@
 }
 
 @media screen and (min-width: 400px) {
-    .countriesBoard {
+    .CountriesBoard {
         justify-content: space-between;
     }
 
-    .countryCard {
+    .CountryCard {
     flex-basis: 21%;
     }
 }
 
-.countryCardFlag {
+.CountryCardFlag {
   height:100%;
   width: 100%;
   border-top-left-radius: 5%;
   border-top-right-radius: 5%;
 }
 
-.countyCardInfo {
+.CountyCardInfo {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -59,7 +59,7 @@
   padding: 30px 20px;
 }
 
-.more-info {
+.More-info {
   display: flex;
   flex-direction: column;
 }

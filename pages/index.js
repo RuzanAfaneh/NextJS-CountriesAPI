@@ -19,7 +19,7 @@ export async function getStaticProps(context) {
 }
 
 const Home = ({ data = [] }) => (
-  <div className={styles.container}>
+  <div className={styles.Container}>
     <Header data={data} />
     <Nav />
     <CountriesBoard data={data} />

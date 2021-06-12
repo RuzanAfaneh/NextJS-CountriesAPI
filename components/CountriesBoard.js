@@ -4,7 +4,7 @@ import styles from "./CountryCard.module.css";
 
 const CountriesBoard = ({ data }) => {
   return (
-    <div className={styles.countriesBoard}>
+    <div className={styles.CountriesBoard}>
       {data?.map((item, i) => (
         <CountryCard data={item} {...item} key={i} />
       ))}

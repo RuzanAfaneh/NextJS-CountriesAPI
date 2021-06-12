@@ -1,4 +1,4 @@
-.bigCard {
+.BigCard {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
@@ -9,19 +9,19 @@
 .firstCol {
   
 }
-.bigCardFlag {
+.BigCardFlag {
   max-width: 450px;
   width: 100%;
   height: auto;
 }
 
-.cardInfo {
+.CardInfo {
   flex-basis: 50%;
   font-size: 13px;
   margin-top: 8px;
 }
 
-.countryCardInfo {
+.CountryCardInfo {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -29,7 +29,7 @@
   flex: 0 0 45%;
 }
 
-.countryCardName {
+.CountryCardName {
   flex-basis: 100%;
   font-size: 30px;
   font-weight: 700;
@@ -37,7 +37,7 @@
   margin-bottom: 24px;
 }
 
-.countyBordersContainer {
+.CountyBordersContainer {
   display: flex;
   /* justify-content: space-between; */
   align-content: center;
@@ -46,7 +46,7 @@
   margin-top: 32px;
 }
 
-.countryBorder {
+.BountryBorder {
   padding: 8px;
   box-shadow: 0px 0px 3px 3px hsl(0, 0%, 88%);
   border-radius: 2px;
@@ -55,7 +55,7 @@
   margin-bottom: 10px;
 }
 
-.borders {
+.Borders {
   display: flex;
   align-self: center;
   margin-right: 10px;
