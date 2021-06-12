@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "./countryCard.module.css";
+import styles from "./CountryCard.module.css";
 // import { Link } from "react-router-dom";
 // import BigCountryCard from "./BigCountyCard";
 import Link from "next/link";
