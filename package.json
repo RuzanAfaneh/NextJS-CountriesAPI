@@ -1,15 +1,15 @@
 {
-  "name": "dynamic-routing",
-  "version": "1.0.0",
+  "name": "nextjs",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "next",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
-  "license": "ISC",
   "dependencies": {
-    "next": "latest",
-    "react": "16.8.6",
-    "react-dom": "16.8.6"
+    "next": "10.x",
+    "react": "17.x",
+    "react-dom": "17.x"
   }
 }
