@@ -6,9 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "format": "prettier --write .",
     "prepare": "husky install",
-    "lint": "eslint --report-unused-disable-directives . && prettier --check '**/?(.)*.{md,css,scss,js,json,yaml,yml,html}'"
+    "format": "prettier --write 'pages/**/*.{scss,js}' --loglevel error ",
+    "lint": "eslint --report-unused-disable-directives . && prettier --check '**/?(.)*.{md,css,scss,js,json,yaml,yml,html}' --loglevel error"
   },
   "dependencies": {
     "husky": "^6.0.0",
