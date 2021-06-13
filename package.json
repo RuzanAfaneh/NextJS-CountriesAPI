@@ -5,11 +5,48 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "format": "prettier --write .",
+    "lint": "npm run lint:scss && npm run lint:js",
+    "lint:js": "eslint --ext 'src/**/*.js'",
+    "lint:scss": "stylelint --config stylelint.config.js 'src/**/*.scss'",
+    "prepare": "husky install"
   },
   "dependencies": {
+    "husky": "^6.0.0",
     "next": "10.x",
     "react": "17.x",
     "react-dom": "17.x"
+  },
+  "devDependencies": {
+    "prettier": "^2.3.1",
+    "eslint": "^7.21.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-config-standard-react": "^11.0.1",
+    "eslint-formatter-pretty": "^4.0.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-import-helpers": "^1.1.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^6.0.0",
+    "mkdirp": "^0.5.5",
+    "node-sass": "^4.14.1",
+    "postcss-cli": "^5.0.1",
+    "pretty-quick": "^3.1.0",
+    "react-helmet": "^5.2.1",
+    "replace": "^0.3.0",
+    "rimraf": "^2.6.3",
+    "stylelint": "^13.12.0",
+    "stylelint-config-css-modules": "^2.2.0",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.19.0"
+    
   }
 }
