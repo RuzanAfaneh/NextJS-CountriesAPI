@@ -1,7 +1,7 @@
-import Link from "next/link";
-import { useState } from "react";
+import Link from 'next/link';
+import { useState } from 'react';
 
-import styles from "./CountryCard.module.css";
+import styles from './CountryCard.module.css';
 
 const CountryCard = ({
   name,
@@ -16,18 +16,14 @@ const CountryCard = ({
   data,
 }) => {
   const [showInfo, setShowInfo] = useState(false);
-  console.log({data});
+  console.log({ data });
   return (
-    <Link
-      href= "/country/[id]"
-      as={`/country/${name}`}
-    >
+    <Link href="/country/[id]" as={`/country/${name}`}>
       <div
         className={styles.CountryCard}
         onClick={() => {
           setShowInfo(!showInfo);
-        }}
-      >
+        }}>
         <img
           className={styles.CountryCardFlag}
           src={flag}

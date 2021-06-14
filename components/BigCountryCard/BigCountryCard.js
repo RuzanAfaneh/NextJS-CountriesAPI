@@ -1,54 +1,54 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-import styles from "./BigCountryCard.module.css";
+import styles from './BigCountryCard.module.css';
 
 const BigCountryCard = ({
-  name,
-  population,
-  capital,
-  region,
-  flag,
   borders,
-  subregion,
+  capital,
   currencies,
+  flag,
   languages,
-  topLevelDomain,
+  name,
   nativeName,
+  population,
+  region,
+  subregion,
+  topLevelDomain,
 }) => {
   return (
-    <div style={{
-      justifyContent: 'center',
-      display: 'flex',
-      padding: '0 30px',
-    }}>
+    <div
+      style={{
+        justifyContent: 'center',
+        display: 'flex',
+        padding: '0 30px',
+      }}>
       <div className={styles.BigCard}>
         <div
           style={{
-            marginTop: "100px",
-            marginBottom: "30px",
+            marginTop: '100px',
+            marginBottom: '30px',
             // boxShadow: "0px 0px 10px 3px hsl(0, 0%, 88%)",
             // maxWidth: "80px",
-            textAlign: "center",
-            padding: "8px",
-            alignContent: "center",
-            borderRadius: "2px",
-            flex: "0 0 100%",
-          }}
-        >
+            textAlign: 'center',
+            padding: '8px',
+            alignContent: 'center',
+            borderRadius: '2px',
+            flex: '0 0 100%',
+          }}>
           <div
             style={{
               // marginTop: "100px",
-              boxShadow: "0px 0px 10px 3px hsl(0, 0%, 88%)",
-              maxWidth: "80px",
-              textAlign: "center",
-              padding: "8px",
-              alignContent: "center",
-              borderRadius: "2px",
-              marginBottom: '60px'
-            }}
-          >
+              alignContent: 'center',
+              borderRadius: '2px',
+              boxShadow: '0 0 10px 3px hsl(0, 0%, 88%)',
+              marginBottom: '60px',
+              maxWidth: '80px',
+              padding: '8px',
+              textAlign: 'center',
+            }}>
             <Link href="/">
-            <span style={{cursor: 'pointer'}}>&#8592; Back </span></Link>
+              <span style={{ cursor: 'pointer' }}>&#8592; Back </span>
+            </Link>
           </div>
         </div>
         {/* <div> */}
@@ -99,14 +99,19 @@ const BigCountryCard = ({
               <span key={`languages--${i}`}>{language.name} </span>
             ))}
           </div>
-         {borders.length > 0 &&  <div
-            className={`${styles.CountyBordersContainer} ${styles.CardInfo}`}
-          >
-            <span className={styles.Corders}>Border Countries: </span>
-            {borders.map((item, i) => {
-              return <span key={`border--${i}`} className={styles.CountryBorder}>{item}</span>;
-            })}
-          </div>}
+          {borders.length > 0 && (
+            <div
+              className={`${styles.CountyBordersContainer} ${styles.CardInfo}`}>
+              <span className={styles.Corders}>Border Countries: </span>
+              {borders.map((item, i) => {
+                return (
+                  <span className={styles.CountryBorder} key={`border--${i}`}>
+                    {item}
+                  </span>
+                );
+              })}
+            </div>
+          )}
         </div>
       </div>
     </div>

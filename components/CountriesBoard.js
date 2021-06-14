@@ -1,5 +1,5 @@
-import CountryCard from "./CountryCard";
-import styles from "./CountryCard.module.css";
+import CountryCard from './CountryCard';
+import styles from './CountryCard.module.css';
 
 const CountriesBoard = ({ data }) => {
   return (

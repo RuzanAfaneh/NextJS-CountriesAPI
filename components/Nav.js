@@ -1,9 +1,5 @@
-
 const Nav = () => {
-  return (
-<>
-</>
-  );
+  return <></>;
 };
 
 export default Nav;
