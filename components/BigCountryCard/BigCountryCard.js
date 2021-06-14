@@ -22,7 +22,7 @@ const BigCountryCard = ({
         display: 'flex',
         padding: '0 30px',
       }}>
-      <div className={styles.BigCard}>
+      <div className={styles.bigCard}>
         <div
           style={{
             marginTop: '100px',
@@ -54,46 +54,46 @@ const BigCountryCard = ({
         {/* <div> */}
 
         <img
-          className={styles.BigCardFlag}
+          className={styles.bigCardFlag}
           height="480"
           width="480"
           src={flag}
           alt={name}
         />
         {/* </div> */}
-        <div className={styles.CountryCardInfo}>
-          <span className={styles.CountryCardName}>{name}</span>
-          <div className={`${styles.CardInfo} "country-card__nativeName"`}>
+        <div className={styles.countryCardInfo}>
+          <span className={styles.countryCardName}>{name}</span>
+          <div className={`${styles.cardInfo} "country-card__nativeName"`}>
             <b>Native name: </b>
             {nativeName}
           </div>
-          <div className={`${styles.CardInfo} "country-card__population"`}>
+          <div className={`${styles.cardInfo} "country-card__population"`}>
             <b>Population: </b>
             {population}
           </div>
-          <div className={`${styles.CardInfo} "country-card__region"`}>
+          <div className={`${styles.cardInfo} "country-card__region"`}>
             <b>Region: </b>
             {region}
           </div>
-          <div className={`${styles.CardInfo} "country-card__region"`}>
+          <div className={`${styles.cardInfo} "country-card__region"`}>
             <b>Capital: </b>
             {capital}
           </div>
-          <div className={`${styles.CardInfo} "country-card__name"`}>
+          <div className={`${styles.cardInfo} "country-card__name"`}>
             <b>subregion:</b>
             {subregion}
           </div>
-          <div className={`${styles.CardInfo} "country-card__topLevelDomain"`}>
+          <div className={`${styles.cardInfo} "country-card__topLevelDomain"`}>
             <b>topLevelDomain: </b>
             {topLevelDomain}
           </div>
-          <div className={`${styles.CardInfo} "country-card__currencies"`}>
+          <div className={`${styles.cardInfo} "country-card__currencies"`}>
             <b>currencies: </b>
             {currencies?.map((currency, i) => (
               <span key={`currencies--${i}`}>{currency.name} </span>
             ))}
           </div>
-          <div className={`${styles.CardInfo} "country-card__languages"`}>
+          <div className={`${styles.cardInfo} "country-card__languages"`}>
             <b>languages: </b>
             {languages?.map((language, i) => (
               <span key={`languages--${i}`}>{language.name} </span>
@@ -101,11 +101,11 @@ const BigCountryCard = ({
           </div>
           {borders.length > 0 && (
             <div
-              className={`${styles.CountyBordersContainer} ${styles.CardInfo}`}>
-              <span className={styles.Corders}>Border Countries: </span>
+              className={`${styles.countyBordersContainer} ${styles.CardInfo}`}>
+              <span className={styles.corders}>Border Countries: </span>
               {borders.map((item, i) => {
                 return (
-                  <span className={styles.CountryBorder} key={`border--${i}`}>
+                  <span className={styles.countryBorder} key={`border--${i}`}>
                     {item}
                   </span>
                 );

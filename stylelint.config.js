@@ -10,8 +10,9 @@ module.exports = {
     'at-rule-no-unknown': null,
     'scss/at-rule-no-unknown': true,
     'color-hex-length': 'short',
+    // 'color-no-hex': false,
     'color-named': 'never',
-    'color-no-hex': true,
+    'order/order': ['custom-properties', 'declarations'],
     'comment-empty-line-before': [
       'always',
       {
@@ -47,7 +48,7 @@ module.exports = {
     'media-feature-range-operator-space-after': 'always',
     'media-feature-range-operator-space-before': 'always',
     'no-invalid-position-at-import-rule': null,
-    'order/properties-alphabetical-order': true,
+    'order/properties-alphabetical-order': [true],
     'selector-attribute-brackets-space-inside': 'never',
     'selector-attribute-operator-space-after': 'never',
     'selector-attribute-operator-space-before': 'never',

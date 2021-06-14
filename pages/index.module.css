@@ -1,6 +1,6 @@
-.Container {
-    max-width: 1440px;
-    width: 100%;
-    background-color: hsl(0, 0%, 98%);
-    margin: 0 auto;
+.container {
+  background-color: hsl(0, 0%, 98%);
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
 }

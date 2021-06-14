@@ -3,7 +3,7 @@ import styles from './CountryCard.module.css';
 
 const CountriesBoard = ({ data }) => {
   return (
-    <div className={styles.CountriesBoard}>
+    <div className={styles.countriesBoard}>
       {data?.map((item, i) => (
         <CountryCard data={item} {...item} key={i} />
       ))}

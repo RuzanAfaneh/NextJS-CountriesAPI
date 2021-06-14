@@ -20,18 +20,18 @@ const CountryCard = ({
   return (
     <Link href="/country/[id]" as={`/country/${name}`}>
       <div
-        className={styles.CountryCard}
+        className={styles.countryCard}
         onClick={() => {
           setShowInfo(!showInfo);
         }}>
         <img
-          className={styles.CountryCardFlag}
+          className={styles.countryCardFlag}
           src={flag}
           alt={name}
           width="25%"
           height="100%"
         />
-        <div className={styles.CountyCardInfo}>
+        <div className={styles.countyCardInfo}>
           <span className="country-card__name">
             <b>Name:</b>
             {name}
