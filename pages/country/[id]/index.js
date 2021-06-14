@@ -1,12 +1,11 @@
-import { useRouter } from "next/router";
-import Link from "next/link";
-import Header from "../../../components/header";
-import BigCountryCard from "../../../components/BigCountryCard/BigCountryCard";
-import { useState } from "react";
-import Nav from "../../../components/Nav";
+import { useRouter } from 'next/router';
+
+import BigCountryCard from '../../../components/BigCountryCard/BigCountryCard';
+import Nav from '../../../components/Nav';
+import Header from '../../../components/header';
 
 export async function getServerSideProps(context) {
-  const res = await fetch("https://restcountries.eu/rest/v2/all");
+  const res = await fetch('https://restcountries.eu/rest/v2/all');
   const data = await res.json();
 
   if (!data) {
@@ -30,27 +29,26 @@ const Post = ({ data }) => {
 
   const getCountryBorders = () => {
     let border = [];
-    borders.map((item) => {
+    borders.map((item) =>
       data.filter((country) => {
-        if (country.cioc === item) border = [...border, country.name];
-      });
-    });
-    console.log({ border });
+        if (country.cioc === item) return (border = [...border, country.name]);
+        else return false;
+      })
+    );
     return border;
   };
   // console.log(filterData[0], border);
   return (
     <div
       style={{
-        backgroundColor: "hsl(0, 0%, 98%)",
-        height: "100vh",
-        maxWidth: "1440px",
-        width: "100%",
+        backgroundColor: 'hsl(0, 0%, 98%)',
+        height: '100vh',
+        maxWidth: '1440px',
+        width: '100%',
         margin: '0 auto',
         display: 'flex',
-        flexDirection: 'column'
-      }}
-    >
+        flexDirection: 'column',
+      }}>
       <Header />
       <Nav />
       <BigCountryCard {...filterData[0]} borders={getCountryBorders()} />

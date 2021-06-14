@@ -1,5 +1,6 @@
-import styles from "./BigCountryCard.module.css";
 import Link from "next/link";
+
+import styles from "./BigCountryCard.module.css";
 
 const BigCountryCard = ({
   name,
@@ -89,21 +90,21 @@ const BigCountryCard = ({
           <div className={`${styles.CardInfo} "country-card__currencies"`}>
             <b>currencies: </b>
             {currencies?.map((currency, i) => (
-              <span>{currency.name} </span>
+              <span key={`currencies--${i}`}>{currency.name} </span>
             ))}
           </div>
           <div className={`${styles.CardInfo} "country-card__languages"`}>
             <b>languages: </b>
             {languages?.map((language, i) => (
-              <span>{language.name} </span>
+              <span key={`languages--${i}`}>{language.name} </span>
             ))}
           </div>
          {borders.length > 0 &&  <div
             className={`${styles.CountyBordersContainer} ${styles.CardInfo}`}
           >
             <span className={styles.Corders}>Border Countries: </span>
-            {borders.map((item) => {
-              return <span className={styles.CountryBorder}>{item}</span>;
+            {borders.map((item, i) => {
+              return <span key={`border--${i}`} className={styles.CountryBorder}>{item}</span>;
             })}
           </div>}
         </div>

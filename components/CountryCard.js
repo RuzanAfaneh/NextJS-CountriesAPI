@@ -1,8 +1,7 @@
-import { useState } from "react";
-import styles from "./CountryCard.module.css";
-// import { Link } from "react-router-dom";
-// import BigCountryCard from "./BigCountyCard";
 import Link from "next/link";
+import { useState } from "react";
+
+import styles from "./CountryCard.module.css";
 
 const CountryCard = ({
   name,
@@ -29,7 +28,6 @@ const CountryCard = ({
           setShowInfo(!showInfo);
         }}
       >
-        {/* <Link className="lol-link" to={{ pathname: `/${name}`  }}/> */}
         <img
           className={styles.CountryCardFlag}
           src={flag}

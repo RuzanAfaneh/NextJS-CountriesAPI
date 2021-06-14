@@ -1,5 +1,4 @@
 import CountryCard from "./CountryCard";
-import Link from "next/link";
 import styles from "./CountryCard.module.css";
 
 const CountriesBoard = ({ data }) => {
