@@ -1,0 +1,16 @@
+.filterContainersContainer {
+  border-color: hsl(0deg 0% 88%);
+  box-shadow: 0 0 3px 3px hsl(0deg 0% 88%);
+  display: flex;
+  margin: 0 auto;
+  outline: none;
+  padding: 8px;
+  position: relative;
+}
+
+.filterWrapper {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0 50px;
+  width: 200px;
+}

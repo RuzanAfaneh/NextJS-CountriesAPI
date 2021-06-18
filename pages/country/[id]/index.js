@@ -20,7 +20,6 @@ export async function getServerSideProps(context) {
 }
 
 const Post = ({ data }) => {
-  console.log({ data });
   const router = useRouter();
   const { id } = router.query;
 
@@ -37,7 +36,7 @@ const Post = ({ data }) => {
     );
     return border;
   };
-  // console.log(filterData[0], border);
+
   return (
     <div
       style={{
