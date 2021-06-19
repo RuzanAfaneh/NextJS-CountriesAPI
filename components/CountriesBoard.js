@@ -5,11 +5,10 @@ import styles from './CountryCard.module.css';
 
 const CountriesBoard = ({ data }) => {
   const Cell = ({ columnIndex, rowIndex, style, index }) => (
-    <div style={style}>
-      {columnIndex + 1 + rowIndex * 3}
+    <div className={styles.countryCell} style={style}>
       <CountryCard
-        data={data[columnIndex + 1 + rowIndex * 3]}
-        {...data[columnIndex + 1 + rowIndex * 3]}
+        data={data[columnIndex + 1 + rowIndex * 4]}
+        {...data[columnIndex + 1 + rowIndex * 4]}
       />
     </div>
   );
@@ -17,17 +16,13 @@ const CountriesBoard = ({ data }) => {
   return (
     <div className={styles.countriesBoard}>
       <Grid
-        columnCount={3}
-        columnWidth={300}
-        height={1000}
-        rowCount={3000}
+        columnCount={4}
+        columnWidth={333}
+        height={10000}
+        rowCount={250}
         rowHeight={450}
-        style={{ margin: '0 auto' }}
-        width={1000}>
+        width={1440}>
         {Cell}
-        {/* {data?.map((item, i) => (
-          <CountryCard data={item} {...item} key={i} />
-        ))} */}
       </Grid>
     </div>
   );
