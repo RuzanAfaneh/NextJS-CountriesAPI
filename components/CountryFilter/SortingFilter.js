@@ -22,12 +22,14 @@ const SortingFilter = ({
       ...provided,
       padding: 20,
       width: 200,
+      cursor: 'pointer',
     }),
     control: () => ({
       // none of react-select's styles are passed to <Control />
       width: 200,
       display: 'flex',
       alignItems: 'center',
+      cursor: 'pointer',
     }),
   };
 
@@ -42,6 +44,7 @@ const SortingFilter = ({
         styles={customStyles}
         ref={filterCountiresRef}
         options={options}
+        isSearchable={false}
         onChange={(opt) => {
           filterCountiresRef.current.value = opt.value;
           handleChange(opt.value);

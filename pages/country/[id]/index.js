@@ -1,7 +1,6 @@
 import { useRouter } from 'next/router';
 
 import BigCountryCard from '../../../components/BigCountryCard/BigCountryCard';
-import Nav from '../../../components/Nav';
 import Header from '../../../components/header';
 
 export async function getServerSideProps(context) {
@@ -49,7 +48,6 @@ const Post = ({ data }) => {
         flexDirection: 'column',
       }}>
       <Header />
-      <Nav />
       <BigCountryCard {...filterData[0]} borders={getCountryBorders()} />
     </div>
   );
