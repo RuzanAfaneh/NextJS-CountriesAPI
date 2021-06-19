@@ -17,8 +17,10 @@
   cursor: pointer;
   display: flex;
   flex-direction: column;
+  height: 100%;
   margin-bottom: 80px;
   margin-right: 10%;
+  max-height: 350px;
   text-align: left;
 }
 
@@ -37,14 +39,13 @@
 }
 
 .countryCardFlag {
-  border-top-left-radius: 5%;
-  border-top-right-radius: 5%;
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
   height: 100%;
   width: 100%;
 }
 
 .countyCardInfo {
-  /* margin-left: 30px; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

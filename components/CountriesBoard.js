@@ -13,14 +13,13 @@ const CountriesBoard = ({ data }) => {
     </div>
   );
 
-  console.log(data.length)
   return (
     <div className={styles.countriesBoard}>
       <Grid
         columnCount={4}
         columnWidth={333}
         height={10000}
-        rowCount={data.length/4}
+        rowCount={data.length / 4}
         rowHeight={450}
         width={1440}>
         {Cell}
