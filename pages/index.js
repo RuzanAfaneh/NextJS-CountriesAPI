@@ -29,6 +29,8 @@ const Home = ({ data }) => {
 
   return (
     <div className={styles.Container}>
+      <title>countries</title>
+      <meta name="AdsBot-Google" content="noindex" />
       <Header data={countriesData} />
       <Nav
         data={data}

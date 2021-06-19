@@ -16,8 +16,8 @@ const CountryCard = ({
   data,
 }) => {
   const [showInfo, setShowInfo] = useState(false);
-  return (
-    <Link href="/country/[id]" as={`/country/${name}`}>
+  const Card = () => {
+    return (
       <div
         className={styles.countryCard}
         onClick={() => {
@@ -49,7 +49,15 @@ const CountryCard = ({
           </span>
         </div>
       </div>
-    </Link>
+    );
+  };
+
+  return (
+    <>
+      <Link href="/country/[id]" as={`/country/${name}`}>
+        {Card()}
+      </Link>
+    </>
   );
 };
 
