@@ -18,7 +18,7 @@ const CountriesBoard = ({ data }) => {
       <Grid
         columnCount={4}
         columnWidth={335}
-        height={(data.length) * 450}
+        height={1000}
         rowCount={data.length / 4}
         rowHeight={450}
         width={1440}>
