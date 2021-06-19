@@ -16,7 +16,6 @@ const CountryCard = ({
   data,
 }) => {
   const [showInfo, setShowInfo] = useState(false);
-  console.log({ data });
   return (
     <Link href="/country/[id]" as={`/country/${name}`}>
       <div
