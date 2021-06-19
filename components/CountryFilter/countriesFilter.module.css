@@ -10,6 +10,8 @@
 
 .filterWrapper {
   appearance: none;
-  box-shadow: 0 0 10px 3px hsl(0, 0%, 88%);
+  background-color: #fff;
+  box-shadow: 0 0 3px 3px hsl(0deg 0% 88%);
+  margin: 0 50px;
   width: 200px;
 }
