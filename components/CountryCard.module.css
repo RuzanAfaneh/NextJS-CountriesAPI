@@ -22,7 +22,7 @@
   text-align: left;
 }
 
-.countryCell:nth-child(4n) .countryCard{
+.countryCell:nth-child(4n) .countryCard {
   margin-right: 0;
 }
 
