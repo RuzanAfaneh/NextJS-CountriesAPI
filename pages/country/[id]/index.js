@@ -22,13 +22,13 @@ const Post = ({ data }) => {
   const router = useRouter();
   const { id } = router.query;
 
-  const filterData = data.filter((item) => item.name === id);
-  const borders = filterData[0].borders;
+  const filterData = data?.filter((item) => item.name === id);
+  const borders = filterData[0]?.borders;
 
   const getCountryBorders = () => {
     let border = [];
-    borders.map((item) =>
-      data.filter((country) => {
+    borders?.map((item) =>
+      data?.filter((country) => {
         if (country.cioc === item) return (border = [...border, country.name]);
         else return false;
       })

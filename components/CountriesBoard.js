@@ -17,8 +17,8 @@ const CountriesBoard = ({ data }) => {
     <div className={styles.countriesBoard}>
       <Grid
         columnCount={4}
-        columnWidth={333}
-        height={10000}
+        columnWidth={335}
+        height={data.length/2 * 450}
         rowCount={data.length / 4}
         rowHeight={450}
         width={1440}>

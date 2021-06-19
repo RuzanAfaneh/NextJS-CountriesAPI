@@ -37,11 +37,10 @@ const Nav = ({ setCountiresData, countriesData, data }) => {
     <div
       className="navContainer"
       style={{
-        marginTop: '100px',
         position: 'relative',
         display: 'flex',
         justifyContent: 'space-between',
-        margin: '100px 50px 0',
+        margin: '100px 50px 0 50px',
       }}>
       <InputSearch
         inputSearchRef={inputSearchRef}

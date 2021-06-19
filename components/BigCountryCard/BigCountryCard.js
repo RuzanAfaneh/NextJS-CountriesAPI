@@ -103,7 +103,7 @@ const BigCountryCard = ({
             <div
               className={`${styles.countyBordersContainer} ${styles.CardInfo}`}>
               <span className={styles.corders}>Border Countries: </span>
-              {borders.map((item, i) => {
+              {borders?.map((item, i) => {
                 return (
                   <span className={styles.countryBorder} key={`border--${i}`}>
                     {item}
