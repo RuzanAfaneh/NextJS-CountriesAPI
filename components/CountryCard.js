@@ -24,13 +24,13 @@ const CountryCard = ({
         onClick={() => {
           setShowInfo(!showInfo);
         }}>
-        <Image
+        {flag && <Image
           className={styles.countryCardFlag}
           src={flag}
           alt={name}
           width="334"
           height="200"
-        />
+        />}
         <div className={styles.countyCardInfo}>
           <span className="country-card__name">
             <b>Name:</b>

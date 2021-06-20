@@ -52,16 +52,15 @@ const BigCountryCard = ({
             </Link>
           </div>
         </div>
-        {/* <div> */}
-
-        <Image
-          className={styles.bigCardFlag}
-          height="480"
-          width="480"
-          src={flag}
-          alt={name}
-        />
-        {/* </div> */}
+        {flag && (
+          <Image
+            className={styles.bigCardFlag}
+            height="480"
+            width="480"
+            src={flag}
+            alt={name}
+          />
+        )}
         <div className={styles.countryCardInfo}>
           <span className={styles.countryCardName}>{name}</span>
           <div className={`${styles.cardInfo} "country-card__nativeName"`}>

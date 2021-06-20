@@ -16,7 +16,7 @@ const InputSearch = ({ searchForCountry, inputSearchRef }) => {
           left: '20px',
           position: 'absolute',
         }}>
-        <Image s src="/search.svg" width="18px" height="30px" />
+        <Image src="/search.svg" width="18px" height="30px" />
       </div>
       <input
         style={{
