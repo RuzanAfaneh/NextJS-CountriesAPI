@@ -28,8 +28,8 @@ const CountryCard = ({
           className={styles.countryCardFlag}
           src={flag}
           alt={name}
-          width="100%"
-          height="100%"
+          width="334"
+          height="200"
         />
         <div className={styles.countyCardInfo}>
           <span className="country-card__name">
