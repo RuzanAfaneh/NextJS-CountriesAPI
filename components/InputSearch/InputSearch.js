@@ -10,7 +10,6 @@ const InputSearch = ({ searchForCountry, inputSearchRef }) => {
         maxWidth: '300px',
       }}>
       <div
-        className="HHEEELOO"
         style={{
           top: '0',
           left: '20px',

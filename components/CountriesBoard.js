@@ -2,6 +2,7 @@ import { FixedSizeGrid as Grid } from 'react-window';
 
 import CountryCard from './CountryCard';
 import styles from './CountryCard.module.css';
+import AutoSizer from 'react-virtualized-auto-sizer';
 
 const CountriesBoard = ({ data }) => {
   const Cell = ({ columnIndex, rowIndex, style, index }) => (
@@ -14,16 +15,23 @@ const CountriesBoard = ({ data }) => {
   );
 
   return (
-    <div className={styles.countriesBoard}>
-      <Grid
-        columnCount={4}
-        columnWidth={335}
-        height={1000}
-        rowCount={data.length / 4}
-        rowHeight={450}
-        width={1440}>
-        {Cell}
-      </Grid>
+    <div className={styles.countriesBoard} style={{ height: '100vh' }}>
+      <AutoSizer>
+        {({ height, width }) => {
+          console.log({ width, height });
+          return (
+            <Grid
+              columnCount={4}
+              columnWidth={width / 4}
+              height={height}
+              rowCount={data.length / 4}
+              rowHeight={450}
+              width={width}>
+              {Cell}
+            </Grid>
+          );
+        }}
+      </AutoSizer>
     </div>
   );
 };
