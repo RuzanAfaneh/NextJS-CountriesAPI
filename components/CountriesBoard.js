@@ -1,8 +1,8 @@
+import AutoSizer from 'react-virtualized-auto-sizer';
 import { FixedSizeGrid as Grid } from 'react-window';
 
 import CountryCard from './CountryCard';
 import styles from './CountryCard.module.css';
-import AutoSizer from 'react-virtualized-auto-sizer';
 
 const CountriesBoard = ({ data }) => {
   const Cell = ({ columnIndex, rowIndex, style, index }) => (
