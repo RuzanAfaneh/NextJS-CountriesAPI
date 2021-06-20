@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 
@@ -23,11 +24,11 @@ const CountryCard = ({
         onClick={() => {
           setShowInfo(!showInfo);
         }}>
-        <img
+        <Image
           className={styles.countryCardFlag}
           src={flag}
           alt={name}
-          width="25%"
+          width="100%"
           height="100%"
         />
         <div className={styles.countyCardInfo}>

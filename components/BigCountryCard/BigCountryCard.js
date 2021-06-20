@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 import styles from './BigCountryCard.module.css';
@@ -53,7 +54,7 @@ const BigCountryCard = ({
         </div>
         {/* <div> */}
 
-        <img
+        <Image
           className={styles.bigCardFlag}
           height="480"
           width="480"
