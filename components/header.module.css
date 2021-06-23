@@ -11,9 +11,12 @@
 }
 
 .headerTitle {
+  display: block;
   font-size: 32px;
   font-weight: 700;
+  margin: 0 auto;
+  max-width: 1440px;
   padding-left: 50px;
-  position: absolute;
+  position: relative;
   top: 10px;
 }
