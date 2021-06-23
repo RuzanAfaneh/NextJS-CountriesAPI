@@ -1,31 +1,14 @@
 import Image from 'next/image';
 
+import styles from './inputSearchField.module.css';
 const InputSearch = ({ searchForCountry }) => {
   return (
-    <div
-      style={{
-        display: 'flex',
-        position: 'relative',
-        width: '100%',
-        maxWidth: '300px',
-      }}>
-      <div
-        style={{
-          top: '0',
-          left: '20px',
-          position: 'absolute',
-        }}>
+    <div className={styles.inputSearchWrapper}>
+      <div className={styles.inputSearchImg}>
         <Image src="/search.svg" width="18px" height="30px" />
       </div>
       <input
-        style={{
-          width: '100%',
-          maxWidth: '300px',
-          border: 'none',
-          boxShadow: '0 0 10px 3px hsl(0, 0%, 88%)',
-          outline: 'none',
-          padding: '8px 55px',
-        }}
+        className={styles.inputFeild}
         type="text"
         placeholder="Search for a country..."
         onChange={(e) => searchForCountry(e)}
