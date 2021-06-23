@@ -23,7 +23,6 @@ const Nav = ({ setCountiresData, countriesData, data }) => {
     } else {
       setCountiresData(
         countriesData.filter((item, i) => {
-          console.log({ item });
           return (
             item.name.toLowerCase().match(e.target.value) ||
             item.cioc?.toLowerCase().match(e.target.value)
