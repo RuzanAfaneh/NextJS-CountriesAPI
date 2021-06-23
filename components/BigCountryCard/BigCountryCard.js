@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 import styles from './BigCountryCard.module.css';
@@ -51,16 +52,15 @@ const BigCountryCard = ({
             </Link>
           </div>
         </div>
-        {/* <div> */}
-
-        <img
-          className={styles.bigCardFlag}
-          height="480"
-          width="480"
-          src={flag}
-          alt={name}
-        />
-        {/* </div> */}
+        {flag && (
+          <Image
+            className={styles.bigCardFlag}
+            height="250"
+            width="400"
+            src={flag}
+            alt={name}
+          />
+        )}
         <div className={styles.countryCardInfo}>
           <span className={styles.countryCardName}>{name}</span>
           <div className={`${styles.cardInfo} "country-card__nativeName"`}>
@@ -103,7 +103,7 @@ const BigCountryCard = ({
             <div
               className={`${styles.countyBordersContainer} ${styles.CardInfo}`}>
               <span className={styles.corders}>Border Countries: </span>
-              {borders.map((item, i) => {
+              {borders?.map((item, i) => {
                 return (
                   <span className={styles.countryBorder} key={`border--${i}`}>
                     {item}

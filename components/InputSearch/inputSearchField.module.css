@@ -1,0 +1,21 @@
+.inputSearchWrapper {
+  display: flex;
+  max-width: 300px;
+  position: relative;
+  width: 100%;
+}
+
+.inputFeild {
+  border: none;
+  box-shadow: 0 0 10px 3px hsl(0, 0%, 88%);
+  max-width: 300px;
+  outline: none;
+  padding: 8px 55px;
+  width: 100%;
+}
+
+.inputSearchImg {
+  left: 20px;
+  position: absolute;
+  top: 0;
+}
