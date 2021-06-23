@@ -5,7 +5,6 @@ import InputSearch from './InputSearch/InputSearch';
 
 const Nav = ({ setCountiresData, countriesData, data }) => {
   const filterCountiresRef = useRef();
-  const inputSearchRef = useRef();
   const [region, setRegion] = useState('');
 
   const FilterCountires = () => {
@@ -42,7 +41,6 @@ const Nav = ({ setCountiresData, countriesData, data }) => {
         margin: '100px 50px 0 50px',
       }}>
       <InputSearch
-        inputSearchRef={inputSearchRef}
         searchForCountry={searchForCountry}
       />
 

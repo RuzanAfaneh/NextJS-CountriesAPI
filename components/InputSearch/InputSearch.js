@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-const InputSearch = ({ searchForCountry, inputSearchRef }) => {
+const InputSearch = ({ searchForCountry }) => {
   return (
     <div
       style={{
