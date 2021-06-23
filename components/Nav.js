@@ -40,9 +40,7 @@ const Nav = ({ setCountiresData, countriesData, data }) => {
         justifyContent: 'space-between',
         margin: '100px 50px 0 50px',
       }}>
-      <InputSearch
-        searchForCountry={searchForCountry}
-      />
+      <InputSearch searchForCountry={searchForCountry} />
 
       <SortingFilter
         FilterCountires={FilterCountires}

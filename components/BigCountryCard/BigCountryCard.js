@@ -55,8 +55,8 @@ const BigCountryCard = ({
         {flag && (
           <Image
             className={styles.bigCardFlag}
-            height="480"
-            width="480"
+            height="250"
+            width="400"
             src={flag}
             alt={name}
           />
