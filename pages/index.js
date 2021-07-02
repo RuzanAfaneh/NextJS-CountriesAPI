@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import CountriesBoard from '../components/CountriesBoard';
-import Nav from '../components/Nav';
+import Nav from '../components/Nav/Nav';
 import Header from '../components/header';
 import styles from './index.module.css';
 

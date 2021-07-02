@@ -1,8 +1,8 @@
 import { useRef, useState } from 'react';
 
-import SortingFilter from './CountryFilter/SortingFilter';
-import InputSearch from './InputSearch/InputSearch';
-
+import SortingFilter from '../CountryFilter/SortingFilter';
+import InputSearch from '../InputSearch/InputSearch';
+import styles from '../Nav/nav.module.css';
 const Nav = ({ setCountiresData, countriesData, data }) => {
   const filterCountiresRef = useRef();
   const [region, setRegion] = useState('');
@@ -32,14 +32,7 @@ const Nav = ({ setCountiresData, countriesData, data }) => {
   };
 
   return (
-    <div
-      className="navContainer"
-      style={{
-        position: 'relative',
-        display: 'flex',
-        justifyContent: 'space-between',
-        margin: '100px 50px 0 50px',
-      }}>
+    <div className={styles.navContainer}>
       <InputSearch searchForCountry={searchForCountry} />
 
       <SortingFilter
