@@ -12,5 +12,6 @@
   appearance: none;
   background-color: #fff;
   box-shadow: 0 0 3px 3px hsl(0deg 0% 88%);
+  height: 100%;
   width: 200px;
 }

@@ -27,7 +27,7 @@ const CountriesBoard = ({ data }) => {
   };
 
   const Cell = ({ columnIndex, rowIndex, style }) => {
-    const colIndex = data.length > 1 ? columnIndex + 1 : columnIndex;
+    const colIndex = data.length > 2 ? columnIndex + 1 : columnIndex;
     return (
       <div className={styles.countryCell} style={style}>
         <CountryCard

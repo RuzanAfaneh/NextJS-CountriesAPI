@@ -15,15 +15,21 @@
   display: block;
   font-size: 22px;
   font-weight: 700;
+  margin: 0 auto;
   max-width: 1440px;
   padding-left: 20px;
   position: relative;
   top: 10px;
+  width: 100%;
 }
 
 @media screen and (min-width: 1280px) {
   .header {
     font-size: 32px;
     padding-left: 50px;
+  }
+
+  .headerTitle {
+    padding-left: 0;
   }
 }
