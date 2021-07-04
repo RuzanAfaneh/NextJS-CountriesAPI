@@ -21,8 +21,9 @@ const CountriesBoard = ({ data }) => {
   }, [size]);
 
   const countColumnCard = () => {
+    if(size <= isMobile || data.length === 1 ) return 1;
+    if(size <= isTablet || data.length === 2) return 2;
     if (data.length > 4) return 4;
-    else if (data.length > 2) return 2;
     return data.length;
   };
 

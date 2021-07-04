@@ -41,6 +41,10 @@
     flex-basis: 21%;
     margin-right: 8%;
   }
+
+  .countryCell:nth-child(4n) .countryCard {
+    margin-right: 0;
+  }
 }
 
 @media screen and (min-width: 1280px) {
