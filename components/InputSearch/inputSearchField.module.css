@@ -1,5 +1,6 @@
 .inputSearchWrapper {
   display: flex;
+  margin-bottom: 30px;
   max-width: 300px;
   position: relative;
   width: 100%;
@@ -18,4 +19,10 @@
   left: 20px;
   position: absolute;
   top: 0;
+}
+
+@media screen and (min-width: 1280px) {
+  .inputSearchWrapper {
+    margin-bottom: 0;
+  }
 }

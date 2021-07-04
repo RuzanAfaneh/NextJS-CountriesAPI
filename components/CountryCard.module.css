@@ -5,12 +5,11 @@
   height: 100%;
   margin-top: 50px;
   max-width: 1440px;
-  padding: 0 50px;
+  padding: 0 20px;
   width: 100%;
 }
 
 .countryCard {
-  align-items: center;
   background-color: hsl(0, 0%, 100%);
   box-shadow: 0 10px 5px 0 rgba(242, 242, 242, 1);
   color: #000;
@@ -18,23 +17,43 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  margin-bottom: 80px;
-  margin-right: 8%;
+  margin-bottom: 40px;
   max-height: 300px;
   text-align: left;
 }
 
-.countryCell:nth-child(4n) .countryCard {
-  margin-right: 0;
+@media screen and (min-width: 480px) {
+  .countriesBoard {
+    justify-content: space-between;
+  }
+
+  .countryCard:nth-child(odd) {
+    margin-right: 8%;
+  }
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 780px) {
   .countriesBoard {
     justify-content: space-between;
   }
 
   .countryCard {
     flex-basis: 21%;
+    margin-right: 8%;
+  }
+
+  .countryCell:nth-child(4n) .countryCard {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .countryCard {
+    margin-bottom: 80px;
+  }
+
+  .countryCell:nth-child(4n) .countryCard {
+    margin-right: 0;
   }
 }
 

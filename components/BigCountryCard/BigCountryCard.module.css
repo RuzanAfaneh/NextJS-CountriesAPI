@@ -19,11 +19,9 @@
 }
 
 .countryCardInfo {
-  align-items: center;
-  align-self: center;
   display: flex;
-  flex: 0 0 45%;
-  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 20px;
 }
 
 .countryCardName {
@@ -35,7 +33,6 @@
 }
 
 .countyBordersContainer {
-  /* justify-content: space-between; */
   align-content: center;
   display: flex;
   flex-basis: 100%;
@@ -43,7 +40,7 @@
   margin-top: 32px;
 }
 
-.bountryBorder {
+.countryBorder {
   border-radius: 2px;
   box-shadow: 0 0 3px 3px hsl(0, 0%, 88%);
   font-size: 10px;
@@ -57,4 +54,13 @@
   display: flex;
   margin-bottom: 10px;
   margin-right: 10px;
+}
+
+@media screen and (min-width: 780px) {
+  .countryCardInfo {
+    align-self: center;
+    flex: 0 0 45%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
